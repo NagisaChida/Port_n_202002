@@ -111,12 +111,17 @@ footer a{
 .footer_cont_wrap_pc{
 	width:980px;
 	margin: 0 auto;
-	height: 50px;
 	text-align: center;
 }
 .footer_cont_wrap_pc p{
 	line-height: 50px;
 	font-weight: bold;
 }
+
+.footer_cont_wrap_pc ul{
+	padding-bottom: 20px;
+    font-size: 10px;
+}
+
 
 
