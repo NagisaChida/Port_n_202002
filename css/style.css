@@ -31,13 +31,13 @@ p{
     margin-inline-end: 0px;
 }
 
+.w100{width: 100%;}
+
+/*  header  */
 header{
 	background-color: #00bcd4;
 	color: #FFF;
 }
-
-.w100{width: 100%;}
-
 header a{
 	color: #FFF;
 	text-decoration: none;
@@ -67,30 +67,36 @@ header a{
 	top: 0px;
 	right: 0px;
 }
-
+/*  header  */
+/*  main  */
 .main_wrap{
 	width:790px;
 	margin: 0 auto;
 	text-align: center;
 }
-
 .main_v{
 	background:url(../img/sky.jpg)no-repeat center;
 	height: 150px;
 	text-align: center;
 }
-
 .main_v p{
 	line-height: 150px;
 	color: #FFF;
 	text-shadow:rgb(111 111 111 / 71%) 2px 2px 2px, rgb(111 111 111 / 71%) 3px 2px 2px;
 }
-
 .main_wrap section{
 	margin-top: 20px;
 }
+/*  main  */
+/*  lightbox  */
 
 
+.gallery_item{
+	display: flex;
+	width: 45%;
+}
+/*  lightbox  */
+/*  footer  */
 footer{
 	background-color: #713f00;
 	color: #FFF;
@@ -122,6 +128,6 @@ footer a{
 	padding-bottom: 20px;
     font-size: 10px;
 }
-
+/*  footer  */
 /*終わり*/
 
