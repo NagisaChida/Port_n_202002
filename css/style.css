@@ -85,15 +85,16 @@ header a{
 	text-shadow:rgb(111 111 111 / 71%) 2px 2px 2px, rgb(111 111 111 / 71%) 3px 2px 2px;
 }
 .main_wrap section{
-	margin-top: 20px;
+	margin: 40px 0;
 }
 /*  main  */
 /*  lightbox  */
 
-
-.gallery_item{
+.gallery_list{
 	display: flex;
-	width: 45%;
+}
+.gallery_item{
+	
 }
 /*  lightbox  */
 /*  footer  */
