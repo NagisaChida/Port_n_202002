@@ -86,6 +86,107 @@
 
 				</ul>
 			</section>
+
+<!-- photoGallery -->
+			<div class="area_photo-g_black">
+				<div class="photoGalleryContents">
+					<ul id="slider_photoGallery">
+						<li><img src="../img/photoGallery_220611/photo_01.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_02.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_03.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_04.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_05.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_06.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_07.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_08.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_09.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_10.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_11.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_12.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_13.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_14.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_15.png" width="640" height="392"></li>
+						<li><img src="../img/photoGallery_220611/photo_16.png" width="640" height="392"></li>
+					</ul>
+					<div class="gallery-thumb1 mt10 tac">
+						<a data-slide-index="0" href="#"></a><img src="../img/photoGallery_220611/photo_01.png" width="140"></a>
+						<a data-slide-index="1" href="#"></a><img src="../img/photoGallery_220611/photo_02.png" width="140"></a>
+						<a data-slide-index="2" href="#"></a><img src="../img/photoGallery_220611/photo_03.png" width="140"></a>
+						<a data-slide-index="3" href="#"></a><img src="../img/photoGallery_220611/photo_04.png" width="140"></a>
+						<a data-slide-index="4" href="#"></a><img src="../img/photoGallery_220611/photo_05.png" width="140"></a>
+						<a data-slide-index="5" href="#"></a><img src="../img/photoGallery_220611/photo_06.png" width="140"></a>
+						<a data-slide-index="6" href="#"></a><img src="../img/photoGallery_220611/photo_07.png" width="140"></a>
+						<a data-slide-index="7" href="#"></a><img src="../img/photoGallery_220611/photo_08.png" width="140"></a>
+						<a data-slide-index="8" href="#"></a><img src="../img/photoGallery_220611/photo_09.png" width="140"></a>
+						<a data-slide-index="9" href="#"></a><img src="../img/photoGallery_220611/photo_10.png" width="140"></a>
+						<a data-slide-index="10" href="#"></a><img src="../img/photoGallery_220611/photo_11.png" width="140"></a>
+						<a data-slide-index="11" href="#"></a><img src="../img/photoGallery_220611/photo_12.png" width="140"></a>
+						<a data-slide-index="12" href="#"></a><img src="../img/photoGallery_220611/photo_13.png" width="140"></a>
+						<a data-slide-index="13" href="#"></a><img src="../img/photoGallery_220611/photo_14.png" width="140"></a>
+						<a data-slide-index="14" href="#"></a><img src="../img/photoGallery_220611/photo_15.png" width="140"></a>
+						<a data-slide-index="15" href="#"></a><img src="../img/photoGallery_220611/photo_16.png" width="140"></a>
+					</div>
+				</div>
+			</div><!--/.area_photo-g_black-->
+			
+			
+			<style>
+				/*----▼フォトギャラエリアcss▼----*/
+				.gallery-thumb1 a img{margin: 7px;}
+				.gallery-thumb1 a img{border: 6px solid #fff;opacity: 0.7;}
+				.gallery-thumb1 a.active img{border: 6px solid #ce9560;opacity: 1;}
+			
+				.prev-btn .bx-prev {width: 40px; height: 40px; display: block;}
+				.next-btn .bx-next {width: 40px; height: 40px; display: block;}
+				.bx-wrapper .bx-viewport{box-shadow: none; border: none; left: auto;}
+				.photoGalleryContents{width: 700px;margin: 0 auto;padding: 45px 0;}
+				.photoGalleryArea .bx-wrapper .bx-prev{left: -43px;}
+				.photoGalleryArea .bx-wrapper .bx-next{right: -43px;}
+				.bx-wrapper img{margin: 0 auto;border: 1px solid #bfbfbf;}
+				.bx-wrapper{margin-bottom:30px;}
+			
+				.photo-g_tab{height:56px;margin: 20px auto 0;width:1064px;}
+				.photo-g_tab li{float:left;height:56px;width:275px;cursor:pointer;margin-bottom:-2px;}
+				.area_photo-g_black{background-color: #f5f5f5;margin: 0 auto;width: 720px;border:2px #aaaaaa59 solid;padding:20px;position: relative;min-height:860px;text-align: center;}
+				/*----▲フォトギャラエリアcss▲----*/
+			</style>
+			
+			<script>
+					//▼ブラックフォトギャラリー
+				$(function(){
+						$('#slider_photoGallery').bxSlider({
+							pagerCustom: '.gallery-thumb1',
+							mode: 'fade',
+							auto: false,　
+							speed: 500,
+							pager: true,
+							controls: true,
+							touchEnabled: false,
+							infiniteLoop:true
+						});
+					});
+				$(window).load(function(){	
+					$(".bx-pager-item:nth-child(1)").children('a').html('<img src="../img/photoGallery_220611/photo_01.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(2)").children('a').html('<img src="../img/photoGallery_220611/photo_02.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(3)").children('a').html('<img src="../img/photoGallery_220611/photo_03.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(4)").children('a').html('<img src="../img/photoGallery_220611/photo_04.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(5)").children('a').html('<img src="../img/photoGallery_220611/photo_05.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(6)").children('a').html('<img src="../img/photoGallery_220611/photo_06.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(7)").children('a').html('<img src="../img/photoGallery_220611/photo_07.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(8)").children('a').html('<img src="../img/photoGallery_220611/photo_08.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(9)").children('a').html('<img src="../img/photoGallery_220611/photo_09.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(10)").children('a').html('<img src="../img/photoGallery_220611/photo_10.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(11)").children('a').html('<img src="../img/photoGallery_220611/photo_11.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(12)").children('a').html('<img src="../img/photoGallery_220611/photo_12.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(13)").children('a').html('<img src="../img/photoGallery_220611/photo_13.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(14)").children('a').html('<img src="../img/photoGallery_220611/photo_14.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(15)").children('a').html('<img src="../img/photoGallery_220611/photo_15.png" style="width:100%;">');
+					$(".bx-pager-item:nth-child(16)").children('a').html('<img src="../img/photoGallery_220611/photo_16.png" style="width:100%;">');
+				});
+			</script>
+
+<!-- photoGallery -->
+
 			<section>
 				<p>北海道</p>
 				<p>本店</p>
