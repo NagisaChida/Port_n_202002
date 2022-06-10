@@ -39,8 +39,27 @@
 		</div>
 		<div class="main_wrap">
 			<section style="margin-bottom: 100px;">
+				<h2>フォトギャラリー(HTML・CSS)</h2>
 				<p><img src="../img/seep_m.jpg" alt="羊" class="w100"></p>
-				<h2>フォトギャラリー(lightbox)</h2>
+				<div class="gallery_list">
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_01.png" alt="" class="w100"></p>
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_02.png" alt="" class="w100"></p>
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_03.png" alt="" class="w100"></p>
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_04.png" alt="" class="w100"></p>
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_05.png" alt="" class="w100"></p>
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_06.png" alt="" class="w100"></p>
+				</div>
+				<div class="gallery_list">
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_07.png" alt="" class="w100"></p>
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_08.png" alt="" class="w100"></p>
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_09.png" alt="" class="w100"></p>
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_10.png" alt="" class="w100"></p>
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_11.png" alt="" class="w100"></p>
+					<p class="gallery_item"><img src="../img/photoGallery_220611/photo_12.png" alt="" class="w100"></p>
+				</div>
+			</section>
+			<section style="margin-bottom: 100px;">
+				<h2>フォトギャラリー(Lightbox)</h2>
 				<ul class="gallery_list">
 					<!-- 1枚目の画像 -->
 					<li class="gallery_item">
@@ -68,6 +87,22 @@
 					</li>
 				</ul>
 			</section>
+			<style>
+			/*  lightbox  */
+			.gallery_list{
+				display: flex;
+				justify-content: space-around;
+				justify-content: space-between;
+				justify-content: space-evenly;
+			}
+			.gallery_item{
+				width: 120px;
+			}
+			/*  lightbox  */
+			</style>
+
+
+
 			<section>
 				<h2>フォトギャラリー(bxslider)①</h2>
 				<ul id="bxslider">
